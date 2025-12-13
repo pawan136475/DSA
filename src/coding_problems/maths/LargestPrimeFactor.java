@@ -1,4 +1,4 @@
-package coding_problems;
+package coding_problems.maths;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
