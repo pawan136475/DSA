@@ -1,7 +1,5 @@
 package coding_problems.maths;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.util.Scanner;
 
 //https://www.geeksforgeeks.org/problems/largest-prime-factor2601/1

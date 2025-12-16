@@ -1,4 +1,4 @@
-package coding_problems.binary_search;
+package coding_problems.leetcode.binary_search;
 
 //binary Search Implementation Time Complexity- O(logn)
 //array is sorted
