@@ -24,6 +24,7 @@ public class Code_81 {
             if (nums[start] == nums[mid] && nums[mid] == nums[end]) {
                 start++;
                 end--;
+                continue;
             }
             //sorted left hand
             else if (nums[start] <= nums[mid]) {

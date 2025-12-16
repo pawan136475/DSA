@@ -1,39 +1,38 @@
 package coding_problems.leetcode.binary_search;
 
-//https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Code_153 {
+//https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/description/
+public class Code_154 {
+
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     public static int binarySearch(int[] nums) {
-
         int start = 0;
         int end = nums.length - 1;
         int mid = 0;
-        int prev = 0;
-        int next = 0;
-
-        while (start <= end) {
+        while (start < end) {
             mid = start + (end - start) / 2;
-            prev = (mid + nums.length - 1) % nums.length;
-            next = (mid + 1) % nums.length;
-            if (nums[start] <= nums[end])
+
+            if (nums[start] < nums[end])
                 return nums[start];
-            if (nums[mid] <= nums[prev] && nums[mid] <= nums[next])
-                return nums[mid];
+
+            if (nums[start] == nums[mid] && nums[mid] == nums[end]) {
+                start++;
+                end--;
+                continue;
+            }
 
             if (nums[start] <= nums[mid])
                 start = mid + 1;
 
-            else if (nums[mid] <= nums[end])
-                end = mid - 1;
+            else
+                end = mid;
 
         }
-        return nums[mid];
+        return nums[start];
     }
 
     public static void main(String[] args) throws IOException {
