@@ -1,4 +1,4 @@
-package coding_problems.geeksforgeeks.binary_search;
+package coding_problems.geeksforgeeks.binary_search.Array;
 
 //https://www.geeksforgeeks.org/problems/equilibrium-point-1587115620/1
 

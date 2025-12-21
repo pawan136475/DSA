@@ -1,11 +1,10 @@
-package coding_problems.geeksforgeeks.binary_search;
+package coding_problems.geeksforgeeks.binary_search.Array;
 
 //https://www.geeksforgeeks.org/problems/missing-number-in-array1416/1
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 
 public class MissingInArray {
 
