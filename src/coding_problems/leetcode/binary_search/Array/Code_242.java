@@ -29,6 +29,7 @@ public class Code_242 {
         return true;
     }
 
+
     public static void main(String[] args) throws IOException {
 
         String s = br.readLine();

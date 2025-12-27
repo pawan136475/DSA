@@ -1,4 +1,4 @@
-package coding_problems.geeksforgeeks.binary_search.Array;
+package coding_problems.geeksforgeeks.binary_search.Array.sliding_window;
 
 import java.io.BufferedReader;
 import java.io.IOException;
