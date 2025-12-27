@@ -1,4 +1,4 @@
-package coding_problems.leetcode.binary_search;
+package coding_problems.leetcode.binary_search.Array;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
