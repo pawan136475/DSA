@@ -26,8 +26,7 @@ public class SubstringswithKDistinct {
         while (r < s.length()) {
             map.put(String.valueOf(s.charAt(r)), map.getOrDefault(String.valueOf(s.charAt(r)), 0) + 1);
             while (map.size() > k) {
-                map.put(String.valueOf(s.charAt(l)), map.getOrDefault(String.valueOf(s.charAt(l)), 0) - 1);
-                if (map.get(String.valueOf(s.charAt(l))) == 0) map.remove(String.valueOf(s.charAt(l)));
+               map.remove(String.valueOf(s.charAt(l)));
                 l++;
 
             }
