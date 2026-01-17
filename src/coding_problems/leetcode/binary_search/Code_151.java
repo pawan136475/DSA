@@ -11,7 +11,7 @@ public class Code_151 {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     public static String reverseWords(String s) {
-        String[] ip = s.trim().split("\\s+");
+        String[] ip = s.trim().split("\\s+"); // to reduce multiple spaces to one
         int start = 0;
         int end = ip.length - 1;
         String temp = "";
