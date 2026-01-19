@@ -4,13 +4,15 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+//https://leetcode.com/problems/longest-palindromic-substring/submissions/1888984319/
+
 public class Code_5 {
 
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
     public static String longestPalindrome(String s) {
         String palindrome = "";
-        if (s.length() <=1) return s;
+        if (s.length() <= 1) return s;
         String LPS = "";
         int low = 0, high = 0;
         for (int i = 1; i < s.length(); i++) {
