@@ -13,14 +13,14 @@ public class Code_215 {
 
     public static int findKthLargest(int[] nums, int k) {
 
-        PriorityQueue<Integer> maxHeap = new PriorityQueue<>();
+        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
 
         for (int i = 0; i < nums.length; i++) {
-            maxHeap.add(nums[i]);
-            if (maxHeap.size() > k) maxHeap.poll();
+            minHeap.add(nums[i]);
+            if (minHeap.size() > k) minHeap.poll();
 
         }
-        return maxHeap.peek();
+        return minHeap.peek();
     }
 
     public static void main(String[] args) throws IOException {
