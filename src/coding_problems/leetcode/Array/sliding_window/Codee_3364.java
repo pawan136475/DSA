@@ -1,11 +1,10 @@
-package coding_problems.leetcode.binary_search.Array.sliding_window;
+package coding_problems.leetcode.Array.sliding_window;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 //https://leetcode.com/problems/minimum-positive-sum-subarray/description/?envType=problem-list-v2&envId=sliding-window
 public class Codee_3364 {

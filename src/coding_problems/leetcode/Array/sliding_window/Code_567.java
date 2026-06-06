@@ -1,4 +1,4 @@
-package coding_problems.leetcode.binary_search.Array.sliding_window;
+package coding_problems.leetcode.Array.sliding_window;
 
 //https://leetcode.com/problems/permutation-in-string/description/
 

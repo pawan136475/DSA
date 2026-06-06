@@ -1,9 +1,8 @@
-package coding_problems.leetcode.binary_search.Array;
+package coding_problems.leetcode.Array;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Stack;
 
 //https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/description/
 
