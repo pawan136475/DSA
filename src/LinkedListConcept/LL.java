@@ -64,19 +64,51 @@ public class LL {
     }
 
     //deleteFirst
-    public void deleteFirst() {
+    public int deleteFirst() {
         int val = head.val;
         head = head.next;
         if (head == null) {
             tail = null;
         }
         size--;
-        return;
+        return val;
     }
 
     //deleteLast
-    public void deleteLast() {
+    public int deleteLast() {
+        if (size <= 1) {
+            return deleteFirst();
+        }
+        Node secondLast = get(size - 2);
+        tail = secondLast;
+        int val = tail.val;
+        tail.next = null;
+        return val;
+    }
+    //find node corresponding to a val
 
+    public Node findNode(int val) {
+        Node node = head;
+        while (node != null) {
+            if (node.val == val) {
+                return node;
+            }
+            node = node.next;
+        }
+        return null;
+    }
+
+    public int delete(int index) {
+        if (index == 0) {
+            return deleteFirst();
+        }
+        if (index == size - 1) {
+            return deleteLast();
+        }
+        Node prev = get(index - 1);
+        int val = prev.next.val;
+        prev.next = prev.next.next;
+        return val;
     }
 
     public Node get(int index) {

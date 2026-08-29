@@ -8,8 +8,11 @@ public class Main {
         linkedList.insertFirst(3);
         linkedList.insertFirst(4);
         linkedList.insertLast(5);
-        linkedList.insert(7, 2);
-        linkedList.deleteFirst();
+        //linkedList.insert(7, 2);
+        //linkedList.deleteFirst();
+        //linkedList.deleteLast();
+        //System.out.println(linkedList.delete(2));
+        System.out.println(linkedList.findNode(3));
         linkedList.display();
     }
 }
